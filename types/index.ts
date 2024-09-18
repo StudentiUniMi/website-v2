@@ -20,3 +20,8 @@ export interface Service {
   link: string;
   icon?: string;
 }
+
+export enum GroupType {
+  General = -1, // Main degree group
+  Complementary = -2,
+}

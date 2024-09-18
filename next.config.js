@@ -4,7 +4,17 @@ const nextConfig = {
   transpilePackages: ["geist"],
   i18n: {
     locales: ['it', 'en'],
-    defaultLocale: 'it',
+    defaultLocale: 'it'
+  },
+  async redirects() {
+    return [
+      // Redirect users from old /courses route to /
+      {
+        source: '/courses/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+    ];
   },
 }
 

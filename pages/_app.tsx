@@ -7,8 +7,8 @@ import { NextUIProvider } from "@nextui-org/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useRouter } from "next/router";
 import Script from "next/script";
-
 import "@/styles/globals.css";
+
 import DefaultLayout from "@/layouts/default";
 
 export default function App({ Component, pageProps }: AppProps) {

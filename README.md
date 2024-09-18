@@ -5,7 +5,8 @@
 <https://nextui.org/docs/guide/installation>
 
 ## Todo
-- pinia
+- redux
+- gestione isolata per gruppo principale cdl
 
 ## License
 
