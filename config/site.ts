@@ -2,39 +2,21 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   author: "Network StudentiUniMi",
-  navItems: [
+  navbarItems: [
     {
-      label: "Home",
+      id: "home",
       href: "/",
     },
     {
-      label: "Servizi",
+      id: "services",
       href: "/services",
     },
     {
-      label: "Regolamento",
+      id: "rules",
       href: "/rules",
     },
     {
-      label: "Chi siamo",
-      href: "/organization",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Servizi",
-      href: "/services",
-    },
-    {
-      label: "Regolamento",
-      href: "/rules",
-    },
-    {
-      label: "Chi siamo",
+      id: "organization",
       href: "/organization",
     },
   ],
@@ -43,6 +25,6 @@ export const siteConfig = {
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui-docs-v2.vercel.app",
     discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    email: "mailto:info@studentiunimi.it",
   },
 };

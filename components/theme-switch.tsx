@@ -1,6 +1,7 @@
 import { FC, useState, useEffect } from "react";
 import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { SwitchProps, useSwitch } from "@nextui-org/switch";
+import { Tooltip } from "@nextui-org/tooltip";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
 
@@ -55,31 +56,33 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
       <VisuallyHidden>
         <input {...getInputProps()} />
       </VisuallyHidden>
-      <div
-        {...getWrapperProps()}
-        className={slots.wrapper({
-          class: clsx(
-            [
-              "w-auto h-auto",
-              "bg-transparent",
-              "rounded-lg",
-              "flex items-center justify-center",
-              "group-data-[selected=true]:bg-transparent",
-              "!text-default-500",
-              "pt-px",
-              "px-0",
-              "mx-0",
-            ],
-            classNames?.wrapper,
-          ),
-        })}
-      >
-        {isSelected ? (
-          <MoonFilledIcon size={22} />
-        ) : (
-          <SunFilledIcon size={22} />
-        )}
-      </div>
+      <Tooltip content="Switch theme" offset={8} placement="bottom">
+        <div
+          {...getWrapperProps()}
+          className={slots.wrapper({
+            class: clsx(
+              [
+                "w-auto h-auto",
+                "bg-transparent",
+                "rounded-lg",
+                "flex items-center justify-center",
+                "group-data-[selected=true]:bg-transparent",
+                "!text-default-500",
+                "pt-px",
+                "px-0",
+                "mx-0",
+              ],
+              classNames?.wrapper,
+            ),
+          })}
+        >
+          {isSelected ? (
+            <MoonFilledIcon size={22} />
+          ) : (
+            <SunFilledIcon size={22} />
+          )}
+        </div>
+      </Tooltip>
     </Component>
   );
 };

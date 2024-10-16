@@ -1,4 +1,20 @@
 {
+  "Navbar": {
+    "navItems": {
+      "home": {
+        "label": "Home"
+      },
+      "services": {
+        "label": "Services"
+      },
+      "rules": {
+        "label": "Rules"
+      },
+      "organization": {
+        "label": "About us"
+      }
+    }
+  },
   "Homepage": {
     "title": "Hello world"
   },
@@ -16,5 +32,6 @@
   },
   "Telegram": {},
   "404": {},
-  "505": {}
+  "505": {},
+  "Footer": {}
 }

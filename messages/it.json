@@ -1,4 +1,20 @@
 {
+  "Navbar": {
+    "navItems": {
+      "home": {
+        "label": "Home"
+      },
+      "services": {
+        "label": "Servizi"
+      },
+      "rules": {
+        "label": "Regolamento"
+      },
+      "organization": {
+        "label": "Chi siamo"
+      }
+    }
+  },
   "Homepage": {
     "title": "Ciao dennis"
   },
@@ -16,5 +32,6 @@
   },
   "Telegram": {},
   "404": {},
-  "505": {}
+  "505": {},
+  "Footer": {}
 }
